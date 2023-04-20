@@ -1,0 +1,55 @@
+:root {
+  --first-color: #6c63ff;
+  --second-color: #f5f2fe;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.greeting,
+h2 {
+  font-size: 50px;
+}
+
+.name {
+  font-size: 95px;
+}
+.speciality {
+  font-size: 22px;
+}
+
+.nav-links {
+  margin: 70px;
+}
+.nav-links a {
+  margin: 0 15px;
+}
+
+.button {
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.contact-link,
+.projects a {
+  background-color: var(--first-color);
+  color: var(--second-color);
+  box-shadow: var(--shadow);
+}
+.about-link {
+  color: var(--first-color);
+}
+
+.project {
+  margin-top: 50px;
+}
+
+.project-overview p,
+.description {
+  padding: 10px 0 35px;
+  font-size: 17px;
+}
+.contact a {
+  font-size: 30px;
+  color: var(--first-color);
+}
