@@ -1,7 +1,15 @@
+/* * {
+  border: 1px solid red;
+} */
+
 :root {
   --first-color: #6c63ff;
   --second-color: #f5f2fe;
   --shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  padding-bottom: 100px;
 }
 
 .greeting,
@@ -16,6 +24,9 @@ h2 {
   font-size: 22px;
 }
 
+.project {
+  display: flex;
+}
 .nav-links {
   margin: 70px;
 }
@@ -36,6 +47,7 @@ h2 {
   color: var(--second-color);
   box-shadow: var(--shadow);
 }
+
 .about-link {
   color: var(--first-color);
 }
@@ -47,9 +59,56 @@ h2 {
 .project-overview p,
 .description {
   padding: 10px 0 35px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .contact a {
   font-size: 30px;
   color: var(--first-color);
+}
+
+@media (max-width: 1199px) {
+  .name {
+    font-size: 70px;
+  }
+  .greeting,
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .name {
+    font-size: 60px;
+  }
+  .greeting,
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .name {
+    font-size: 45px;
+  }
+  .greeting {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .project {
+    text-align: center;
+  }
+  .project img {
+    display: none;
+  }
+
+  .project .button {
+    display: block;
+    margin: 0 20px;
+  }
+
+  .examples img {
+    margin-bottom: 20px;
+  }
 }
