@@ -112,3 +112,12 @@ h2 {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 445px) {
+  .nav-links {
+    margin: 50px;
+  }
+  .nav-links a {
+    padding: 15px 10px;
+  }
+}
